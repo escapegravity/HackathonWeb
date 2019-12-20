@@ -1,28 +1,41 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+body {
+  /* Margin bottom by footer height */
+  background-color: #ddd;
+  margin-bottom: 60px;
 }
 
-/* Provide sufficient contrast against white background */
-a {
-  color: #0366d6;
-}
+a { color:#fff !important; }
+a:hover { color:#008c67 !important; }
 
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
+.underline { text-decoration: underline; }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
+/* COLORS */
+.color-skandia { color: #008c67 !important; }
+.color-white { color:#fff !important; }
+
+.bg-black { background-color: #000; }
+
+/* LANDING PAGE */
+.landingPageWrapper { padding:50px 0px; margin-top: 280px; opacity:0.7; }
+.landingPageHeading { font-size: 50px; }
+.landingPageDate { font-size: 20px; }
+
+/* NAVIGATION */
+.topHeader { padding:3px 0 8px 0; width:100%; opacity: 0.7; } 
+.topHeading { font-size: 30px; }
+.side-nav { position:absolute; left:0; top:200px; opacity: 0.7; padding:20px 80px 20px 10px; }
+.side-nav .row { padding:5px 0; }
+
+
+.pageBackground { width:100%; position: absolute; top:0; left:0; overflow: hidden; }
+
+.container-wrapper { margin-top: 440px; opacity: 0.7; min-height: 400px; }
+main {}
+
+
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -58,15 +71,12 @@ html {
   min-height: 100%;
 }
 
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-  background-color: #282828;
-}
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
+  background: #d8d1ca;
+  border: 1px solid #bcb0a7;
 }

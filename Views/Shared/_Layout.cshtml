@@ -8,38 +8,69 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
+    <img class="pageBackground" src="../images/DSC_0142_bw.jpg" alt="huzzah" />
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="topHeader text-center bg-black">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">HackathonWeb</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+                <div class="row text-center">
+                    <div class="col-12">
+                        <a href="/" class="color-skandia font-weight-bold topHeading">skandia:hackathon</a>
+                    </div>
+                </div>
+                <div class="row mt-2 text-center underline">
+                    <div class="col">
+                        <a href="/home/information">Information</a>
+                    </div>
+                    <div class="col">
+                        <a href="/home/inspiration">Inspiration</a>
+                    </div>
+                    <div class="col">
+                        <a href="/home/projects">Projekt</a>
+                    </div>
+                    <div class="col">
+                        <a href="/home/previoushackathons">Föregående Hackathons</a>
+                    </div>
                 </div>
             </div>
-        </nav>
+        </div>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+    @* <nav class="side-nav bg-black">
+        <div class="color-white underline">
+            <div class="row">
+                <div class="col">
+                    <a href="">Information</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a href="">Inspiration</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a href="">Projekt</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a href="">Föregående Hackathons</a>
+                </div>
+            </div>            
+        </div>
+    </nav>        *@
+    <div class="container-wrapper bg-black color-white">
+        <div class="container">     
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
     </div>
-
+@* 
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2019 - HackathonWeb - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
-    </footer>
+    </footer> *@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

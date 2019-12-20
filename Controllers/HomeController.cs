@@ -23,10 +23,25 @@ namespace HackathonWeb.Controllers
             return View();
         }
 
+        public IActionResult Information()
+        {
+            return View();
+        }   
+
+        public IActionResult Inspiration()
+        {
+            return View();
+        }             
+
         public IActionResult Projects()
         {
             return View();
         }
+
+        public IActionResult PreviousHackathons()
+        {
+            return View();
+        }        
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
